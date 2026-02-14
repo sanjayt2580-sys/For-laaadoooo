@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 25.2.3.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.27in 11.69in; margin: 0.79in }
+		p { margin-bottom: 0.1in; line-height: 115%; background: transparent }
+		pre { font-size: 10pt; font-family: "Liberation Mono", monospace; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;title&gt;For My Laaadooo ❤️&lt;/title&gt;
+
+&lt;style&gt;
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    overflow:hidden;
+}
+
+/* floating hearts */
+.heart{
+    position:absolute;
+    color:#ff2e63;
+    animation:float 6s linear infinite;
+}
+@keyframes float{
+    0%{transform:translateY(100vh);opacity:0;}
+    50%{opacity:1;}
+    100%{transform:translateY(-10vh);opacity:0;}
+}
+
+/* screens */
+.screen{
+    text-align:center;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    max-width:360px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#ff2e63;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+button:hover{ transform:scale(1.1); }
+
+#main{ display:none; }
+h1{ color:#ff2e63; }
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;!-- music --&gt;
+&lt;audio id=&quot;music&quot; loop&gt;
+  &lt;source src=&quot;love.mp3&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;
+
+&lt;!-- first screen --&gt;
+&lt;div class=&quot;screen&quot; id=&quot;start&quot;&gt;
+    &lt;h2&gt;Hey cutuuu 🙂‍↕️❤️&lt;/h2&gt;
+    &lt;p&gt;I made something for you...&lt;/p&gt;
+    &lt;button onclick=&quot;startLove()&quot;&gt;Tap here to continue 💌&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- proposal screen --&gt;
+&lt;div class=&quot;screen&quot; id=&quot;main&quot;&gt;
+    &lt;h1&gt;Happy Valentine’s Day ❤️&lt;/h1&gt;
+
+    &lt;p&gt;
+    I have something to tell you…&lt;br&gt;&lt;br&gt;
+
+    When I miss you… I use your lip balm 🥺💋&lt;br&gt;
+    When I miss you… I do khichh 😭❤️&lt;br&gt;&lt;br&gt;
+
+    I love you more than you think, my cutuuu…&lt;br&gt;
+    More than words… more than anything 💖&lt;br&gt;&lt;br&gt;
+
+    Will you always be my laaadooo? 🥹❤️
+    &lt;/p&gt;
+
+    &lt;button onclick=&quot;alert('YAYYYY 😭❤️ I love you forever!!!')&quot;&gt;
+        YES OF COURSE 💍
+    &lt;/button&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+function startLove(){
+    document.getElementById(&quot;start&quot;).style.display=&quot;none&quot;;
+    document.getElementById(&quot;main&quot;).style.display=&quot;block&quot;;
+    document.getElementById(&quot;music&quot;).play();
+}
+
+/* floating hearts generator */
+setInterval(()=&gt;{
+    const heart=document.createElement(&quot;div&quot;);
+    heart.className=&quot;heart&quot;;
+    heart.innerHTML=&quot;❤️&quot;;
+    heart.style.left=Math.random()*100+&quot;vw&quot;;
+    heart.style.fontSize=(15+Math.random()*25)+&quot;px&quot;;
+    heart.style.animationDuration=(4+Math.random()*4)+&quot;s&quot;;
+    document.body.appendChild(heart);
+    setTimeout(()=&gt;heart.remove(),8000);
+},300);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+</body>
+</html>
